@@ -1,0 +1,1699 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+background-image: url(bgimg1.jpg);
+  user-select: none;
+    
+}
+header{
+ 
+  height: 100px;
+  width: 360px;
+}
+section{
+  display: flex;
+}
+
+h1{
+  color: rgb(12, 12, 42);
+  padding: 20px;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px rgb(12, 12, 42), 3px 3px 5px rgb(12, 12, 42);
+}
+label{
+  top: 30px;
+  left: -10px;
+width: 80px;
+height: 50px;
+background-color: rgba(128, 128, 128, 0.031);
+border-radius: 40px;
+position: relative;
+display: block;
+
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4) inset, 0px -5px 15px rgba(255, 255, 255, 0.4) inset;
+cursor: pointer;
+transition: 0.3s;
+}
+label::after{
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 10px;
+ background: linear-gradient(180deg,#0A1D3D,#0C0C2A);
+ border-radius: 180px;
+ box-shadow: rgba(0, 0, 0, 0.2);
+ position: absolute;
+}
+ #dark-toggle{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#dark-toggle:checked +label{
+  background: #242424;
+  }
+#dark-toggle:checked +label::after{
+    left: 70px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+}
+label:active::after{
+  width: 60px;
+}
+.background{
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+#dark-toggle:checked ~ body {
+  background: black;
+  color: white;
+}
+#dark-toggle:checked ~ .background{
+  background: black;
+ }
+
+ nav{
+  background-color: white;
+  height: 70px;
+  width: 370px;
+  display: flex;
+ }
+ #logo{
+  width: 90px;
+  height: 70px;
+ }
+ .dropdown{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 50px;
+  word-spacing: 6px;
+ }
+ .dropdown :hover{
+  background:#0C0C2A ;
+  border-radius: 8px;
+ }
+ .dropdown li{
+  display: inline;
+  
+ }
+ .dropdown li a{
+  text-decoration: none;
+    font-weight: bold;
+  font-size: 12px;
+ }
+ .dropdown li a:hover{
+  color: whitesmoke;
+ }
+
+#home{
+
+width: 340px;
+height: 650px;
+display: block;
+padding: 10px;
+}
+h4{
+  color: rgb(12, 12, 42);
+  margin-top: 50px;
+  margin-left: 20px;
+}
+h2{
+  color: rgb(12, 12, 42);
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 40px;
+}
+#heading{
+  margin-top: 10px;
+  font-size: 30px;
+}
+p{
+  color: rgb(12, 12, 42);
+  margin-left: 25px;
+}
+#profile{
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 35px;
+  border-radius: 200px;
+  box-shadow: 6px -6px 10px rgb(12, 12, 42), -6px 6px 10px rgb(12, 12, 42), -6px -6px 10px rgb(12, 12, 42),6px 6px 10px rgb(12, 12, 42);
+
+}
+#bottom{
+  display: block;
+  height: 150px;
+  padding: 10px;
+  background-image: url(bgimg1.jpg);
+}
+.homeicons{
+  width: 240px;
+  height: 40px;
+  background-color: rgb(12, 12, 42) ;
+ padding: 5px;
+  margin-left: 40px;
+  margin-top: 15px;
+  border-radius: 20px;
+  box-shadow: 2px -4px 15px rgb(12, 12, 42) ,  2px 2px 15px rgb(12, 12, 42) ;
+}
+
+#icon1{
+
+    color: rgb(12, 12, 42);
+    margin-left: 2px;
+  font-size: 5px; 
+}
+#homebtn{
+  width: 250px;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 40px;
+  border-radius: 20px;
+  background-color: rgb(12, 12, 42);
+  padding: 10px;
+
+  
+}
+#homebtn:hover{
+  background-color: rgb(12, 12, 42);
+}
+#homebtn a{
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 10px;
+}
+#homebtn a:hover{
+  color: whitesmoke;
+}
+#aboutme{
+  width: 360px;
+  height: 1270px;
+
+  display: block; 
+}
+.aboutheader{
+  
+  width: 340px;
+  height: 70px;
+  padding: 10px;
+ 
+}
+#aboutheading{
+  text-align: left;
+  margin-top: 2px;
+  color: rgb(12, 12, 42);
+  font-size: 40px;
+ text-decoration:2px  underline;
+ text-underline-offset: 5px;
+ text-shadow: -2px 2px 4px rgb(12, 12, 42);
+}
+#container{
+  display: block;
+  
+}
+#photo{
+ width: 300px;
+ height: 400px;
+ margin-left: 30px;
+ margin-top: 20px;
+ border-radius: 50px;
+ box-shadow: 7px -7px 10px rgb(12, 12, 42), -7px 7px 10px rgb(12, 12, 42),-7px -7px 10px rgb(12, 12, 42),7px 7px 10px rgb(12, 12, 42);
+
+}
+
+.aboutcontent{
+width: 360px;
+height: 750px;
+
+}
+.aboutcontent h3{
+margin-top: 20px;
+margin-left: 20px;
+font-size: 30px;
+font-weight: bolder;
+color: rgb(12, 12, 42);
+font-style: italic;
+text-shadow: 3px 3px 5px rgb(12, 12, 42);
+}
+.aboutcontent p{
+ font-size: 15px;
+  margin-top: 20px;
+  color: rgb(12, 12, 42);
+}
+#aboutbtn{
+  height: 50px;
+  width: 150px;
+  margin-left: 100px;
+  margin-top: 30px;
+  background-color: rgb(101, 179, 208);
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px rgb(101, 179, 208),  -8px -8px 15px rgb(101, 179, 208),-8px 8px 15px rgb(101, 179, 208),8px -8px 15px rgb(101, 179, 208) ;
+}
+#aboutbtn:hover{
+  background-color: rgb(12, 12, 42);
+}
+#aboutbtn a{
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(12, 12, 42);
+  font-weight: bold;
+}
+#aboutbtn a:hover{
+  color: whitesmoke;
+}
+#skills{
+ 
+  width: 340px;
+  height: 800px;
+  padding: 10px;
+
+
+}
+
+
+.skillsheader h2{
+  text-align: left;
+  text-decoration:2px solid  underline;
+  text-underline-offset: 5px;
+  text-shadow: -2px 2px 4px rgb(12, 12, 42);
+  color: rgb(12, 12, 42);
+  font-size: 40px;
+  
+}
+#skillbox{
+  background-color: rgb(12, 12, 42);
+  width: 300px;
+  height: 650px;
+  margin-left: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 10px rgb(101, 179, 208) ,10px 10px 10px rgb(101, 179, 208), -10px 10px 10px rgb(101, 179, 208),10px -10px 10px rgb(101, 179, 208);
+
+}
+
+.skillsheader li{
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+li h3{
+  color: whitesmoke;
+  
+}
+.bar{
+  background-color: aliceblue;
+  display: block;
+  height: 6px;
+  border: 1px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px rgb(101, 179, 208) ;
+}
+.bar span{
+  height: 30px;
+  float: left;
+  background-color: rgb(22, 146, 168);
+ 
+}
+.html{
+  width: 90%;
+}
+.css{
+  width: 85%;
+}
+.js{
+  width: 20%;
+}
+.dsa{
+  width: 20%;
+}
+.react{
+  width: 20%;
+}
+.node{
+  width: 20%;
+}
+.express{
+  width: 20%;
+}
+.mongo{
+  width: 20%;
+}
+
+.certify{
+
+  height: 1550px;
+  width: 340px;
+  display: block;
+  padding: 10px;
+
+}
+#certifyheading{
+  font-size: 40px;
+  margin-top: 20px;
+  color: rgb(12, 12, 42);
+  text-decoration:2px underline;
+  text-underline-offset: 10px;
+  text-shadow: -2px 2px 4px rgb(12, 12, 42);
+ 
+}
+.certification{
+  background-color: rgb(12, 12, 42);
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-radius: 30px;
+  box-shadow: 10px -10px 5px rgb(12, 12, 42);
+  position: relative;
+}
+.certification h3{
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+}
+.certification p{
+  font-size: 25px;
+  color: whitesmoke;
+  margin-top: 60px;
+  font-style: italic;
+  }
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-image: url(bgimg2.jpg);
+  background-size: 350px 440px;
+  opacity: 1;
+  background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 20px;
+  }
+.certification:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+.overlay .text{
+  font-size: 40px;
+  text-wrap: wrap;
+  font-weight: bold;
+  color: rgb(12, 12, 42);
+  margin-top: 140px;
+  margin-left: 130px;
+}
+.text a{
+text-decoration: none;
+color: rgb(12, 12, 42);
+}
+#services{
+ 
+  width: 340px;
+  height: 550px;
+  display: block;
+  padding: 10px;
+  transition:all  2s ;
+
+}
+#services h2{
+   font-size: 40px;
+   margin: 20px;
+   text-decoration:2px underline;
+   text-underline-offset: 8px;
+   color: rgb(12, 12, 42);
+   text-shadow: -2px 2px 4px rgb(12, 12, 42);
+}
+.servicecard{
+  height: 400px;
+  width: 300px;
+  background-color:rgb(12, 12, 42) ;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: -7px 20px 5px rgb(101, 179, 208);
+  transform: skew(8deg);
+  animation-name: serviceanimation;
+  animation-duration: 5s;
+  animation-direction: reverse;
+  animation-timing-function: ease;
+}
+@keyframes serviceanimation{
+  from{ margin-left: 20px;}
+  to{margin-left: 400px;}
+  }
+.servicecard p{
+  font-size: 20px;
+  margin-top: 40px;
+  color: rgb(218, 218, 235);
+ 
+}
+#projects{
+ 
+  width: 340px;
+  height: 2500px;
+  display: block;
+  padding: 10px;
+  transition: all 2s;
+}
+#projects h2{
+  font-size: 40px;
+ margin: 20px;
+ text-decoration: underline;
+ text-underline-offset: 6px;
+ color: rgb(12, 12, 42);
+ text-shadow: -2px 2px 4px rgb(12, 12, 42);
+}
+#procards{
+
+  width: 320px;
+  height: 2500px;
+  display: block;
+  padding: 10px;
+}
+.card{
+  background-color: rgb(12, 12, 42);
+  width: 300px;
+  height: 350px;
+  margin-top: 30px;
+  margin-left: 5px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 10px 5px rgb(101, 179, 208) inset;
+  position: relative;
+}
+.card:hover{
+  transform: translate3d(10px,10px,10px);
+}
+.card #cardhead{
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 2px;
+  text-decoration: none;
+  color: rgb(176, 201, 157);
+  text-shadow: 2px 2px 2px rgb(101, 179, 208), 2px 2px 2px rgb(22, 146, 168);
+}
+.card p{
+  font-size: 20px;
+  color: rgb(230, 230, 246);
+  margin-top: 30px;
+}
+.overlay2{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-image: url(bgimg3.jpg);
+  background-size: 320px 400px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+  box-shadow: 20px 20px 25px rgb(12, 12, 42) inset, -20px -20px 25px rgb(12, 12, 42) inset, 20px -20px 25px rgb(12, 12, 42) inset, -20px 20px 25px rgb(12, 12, 42) inset;
+}
+.card:hover .overlay2{
+top: 0;
+height: 100%;
+}
+.overlay2 .link2 i{
+font-size: 25px;
+margin-left: 90px;
+margin-top: 90px;
+font-weight: bold;
+color: rgb(12, 12, 42);
+text-shadow: -5px -5px 10px rgb(12, 12, 42), 5px 5px 10px rgb(12, 12, 42);
+}
+
+#contact{
+ 
+  width: 340px;
+  height: 600px;
+  display: block;
+  padding: 10px;
+}
+#contact h2{
+  font-size: 40px;
+  color: rgb(12, 12, 42);
+  margin-left: 30px;
+  text-shadow: -2px 2px 4px rgb(12, 12, 42);
+}
+form{
+  height: 500px;
+  width: 320px;
+  margin-left: 10px;
+  margin-top: 20px;
+ 
+}
+input{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 250px;
+  border: 3px solid rgb(12, 12, 42);
+  background-color: rgb(12, 12, 42);
+}
+::placeholder{
+  color: rgb(212, 212, 235);
+}
+textarea{
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 150px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 250px;
+  border: 3px solid rgb(12, 12, 42);
+  background-color: rgb(12, 12, 42);
+}
+
+#sendbtn{
+  margin-left: 70px;
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid rgb(12, 12, 42);
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 30px 25px 30px rgb(12, 12, 42) inset, -10px 7px 30px rgb(12, 12, 42) ;
+}
+#sendbtn :hover{
+  background-color: gray;
+  color: #0A1D3D;
+}
+footer{
+  background-color: rgb(12, 12, 42);
+  width: 340px;
+  height: 100px;
+  padding: 10px;
+
+}
+footer article{
+  background-color: rgba(89, 94, 105, 0.394);
+  width: 250px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgb(101, 179, 208);
+}
+article i{
+  font-size: 30px;
+  margin: 10px;
+  color: whitesmoke;
+ 
+}
+@media (min-width: 768px){
+  body{
+    width: 768px;
+  }
+header{
+  width: 768px;
+  height: 150px;
+} 
+label{
+  top: 40px;
+  left: -20px;
+width: 130px;
+height: 70px;
+background-color: rgba(128, 128, 128, 0.031);
+border-radius: 40px;
+position: relative;
+display: block;
+
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4) inset, 0px -5px 15px rgba(255, 255, 255, 0.4) inset;
+cursor: pointer;
+transition: 0.3s;
+}
+label::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 8px;
+  left: 10px;
+ background: linear-gradient(180deg,#0A1D3D,#0C0C2A);
+ border-radius: 180px;
+ box-shadow: rgba(0, 0, 0, 0.2);
+ position: absolute;
+}
+ #dark-toggle{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#dark-toggle:checked +label{
+  background: #242424;
+  }
+#dark-toggle:checked +label::after{
+    left: 105px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+}
+label:active::after{
+  width: 60px;
+}
+.background{
+  width: 100vw;
+  height: 100vh;
+ z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+#dark-toggle:checked ~ body {
+  background: black;
+  color: white;
+}
+#dark-toggle:checked ~ .background{
+  background: black;
+ 
+  }
+
+
+  header h1 {
+   margin-left: 50px;
+    font-size: 100px;
+    color: rgb(12, 12, 42);
+    padding: 20px;
+    text-shadow: 6px 6px 8px rgb(12, 12, 42);
+    }
+  nav{
+    width: 768px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+  }
+  img{
+   
+    height: 100px;
+    width: 150px;
+  }
+  .dropdown{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 200px;
+    word-spacing: 20px;
+   }
+   .dropdown :hover{
+    background:#0C0C2A ;
+    border-radius: 8px;
+   }
+   .dropdown li{
+    display: inline;
+    
+   }
+   .dropdown li a{
+    text-decoration: none;
+      font-weight: bold;
+    font-size: 20px;
+   }
+   .dropdown li a:hover{
+    color: whitesmoke;
+   }
+  #home{
+    width: 748px;
+    height: 1000px;
+  }
+  h4{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 70px;
+  }
+  #heading{
+    font-size: 50px;
+  }
+  p{
+    font-size: 25px;
+  }
+  #profile{
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 450px;
+    height: 450px;
+    border-radius: 250px;
+    box-shadow: 10px 10px 15px rgb(12, 12, 42), -10px -10px 15px rgb(12, 12, 42), -10px 10px 15px rgb(12, 12, 42), 10px -10px 15px rgb(12, 12, 42);
+  }
+  #bottom{
+  
+   display: flex;
+    background-color:rgb(12, 12, 42);
+    height: 150px;
+    padding: 10px;
+    
+  }
+  .homeicons{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(12, 12, 42);
+   padding: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 10px rgb(101, 179, 208);
+  }
+  #icon1{
+  
+      color: whitesmoke;
+     font-size: 40px;
+     margin-left: 0px;
+     margin-top: 30px;
+    
+  }
+  #homebtn{
+    width: 300px;
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 20px;
+    background-color: rgb(12, 12, 42);
+    padding: 15px;
+    box-shadow: -9px -9px 10px rgb(101, 179, 208);
+    
+  }
+  #homebtn:hover{
+    background-color: rgb(12, 12, 42);
+  }
+  #homebtn a{
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  #homebtn a:hover{
+    color: whitesmoke;
+  }
+  #aboutme{
+    width: 768px;
+    height: 1800px;
+    
+    
+  }
+  .aboutheader{
+  width: 748px;
+    height: 70px;
+  }
+  #aboutheading{
+    text-align: left;
+    font-size: 65px;
+    color: rgb(12, 12, 42);
+    text-shadow: 2px 2px 4px rgb(12, 12, 42),-2px -2px 4px rgb(12, 12, 42);
+  }
+  #container{
+    height: 1600px;
+ 
+  }
+  #photo{
+    width: 600px;
+    height: 800px;
+    margin-left: 90px;
+    margin-top: 70px;
+    border-radius: 60px;
+    box-shadow: 15px -15px 20px rgb(12, 12, 42), -15px 15px 20px rgb(12, 12, 42), -15px -15px 20px rgb(12, 12, 42), 15px 15px 20px rgb(12, 12, 42);
+    
+   }
+   .aboutcontent{
+   width: 768px;
+   height: 900px;
+   
+   }
+   .aboutcontent h3{
+   margin-top: 60px;
+   text-align: center;
+   font-size: 60px;
+   font-weight: bolder;
+   color: rgb(12, 12, 42);
+   font-style: italic;
+   
+   }
+   .aboutcontent p{
+    font-size: 25px;
+     margin-top: 50px;
+   }
+   #aboutbtn{
+     height: 75px;
+     width: 250px;
+     margin-left: 250px;
+     margin-top: 50px;
+     border-radius: 15px;
+     box-shadow: 5px 5px 20px rgb(101, 179, 208),  5px 5px 20px rgb(68, 161, 198)inset ;
+   }
+   #aboutbtn a{
+     font-size: 30px;
+     text-decoration: none;
+     color: rgb(12, 12, 42);
+     font-weight: bold;
+   }
+   #skills{
+    
+    height: 1300px;
+    width: 748px;
+    margin-top: 220px;  
+  }
+   .skillsheader{
+    
+    width: 768px;
+    height: 90px;
+   
+  }
+  .skillsheader h2{
+    text-align: left;
+    color: rgb(12, 12, 42);
+    font-size: 65px;
+    text-shadow: 1px 2px 4px rgb(12, 12, 42);
+  }
+  #skillbox{
+    background-color: rgb(12, 12, 42);
+  
+    width: 700px;
+    height: 1150px;
+    margin-left: 20px;
+    border-radius: 10px;  
+    margin-top: 20px;
+    box-shadow: none;
+}
+  .skillsheader li{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 30px;
+  }
+  li h3{
+    color: whitesmoke;
+    font-size: 35px;
+    
+  }
+  .bar{
+    background-color: aliceblue;
+    display: block;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(101, 179, 208), -5px -5px 10px rgb(101, 179, 208);
+  }
+  .bar span{
+    height: 40px;
+    float: left;
+    background-color: rgb(99, 179, 193);
+  }
+  .html{
+    width: 90%;
+  }
+  .css{
+    width: 85%;
+  } 
+  .certify{
+   
+    height: 2000px;
+    width: 748px;
+    display: block;
+    padding: 10px;
+  }
+  #certifyheading{
+    font-size: 65px;
+    color: rgb(12, 12, 42);
+    text-decoration:2px underline;
+    text-underline-offset: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px rgb(12, 12, 42);
+   
+  }
+  .certification{
+    background-color: rgb(12, 12, 42) ;
+    height: 500px;
+    width: 550px;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+    border-radius: 30px;
+    box-shadow: 10px -10px 5px rgb(101, 179, 208) ;
+    position: relative;
+  }
+  .certification h3{
+    font-size: 50px;
+  }
+  .certification p{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400px;
+    margin-top: 90px;
+  }
+  .overlay{
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-image: url(bgimg4.jpg);
+  background-size: 600px 600px;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+      border-radius: 20px;
+    }
+  .certification:hover .overlay{
+    bottom: 0;
+    height: 100%;
+  }
+ .overlay .text{
+    font-size: 70px;
+  text-wrap: wrap;
+    font-weight: bold;
+    color: rgb(12, 12, 42);
+    margin-top: 200px;
+    margin-left: 220px;
+  }
+ 
+  #services{
+ 
+    width: 748px;
+    height: 800px;
+    display: block;
+    padding: 10px;
+    
+  }
+  #services h2{
+     font-size: 65px;
+     margin: 20px;
+     text-decoration:2px underline; 
+     text-underline-offset: 10px;
+     color: rgb(12, 12, 42);
+     text-shadow: 2px 2px 4px rgb(12, 12, 42);
+  }
+  .servicecard{
+    height: 500px;
+    width: 600px;
+    background-color:  rgb(12, 12, 42);
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    
+  }
+  @keyframes serviceanimation{
+    from{ margin-left: 50px;}
+    to{margin-left: 800px;}
+    }
+  .servicecard p{
+    font-size: 30px;
+    font-weight: 900px;
+    font-style: oblique;
+    margin-top: 40px;
+  }
+  #projects{
+ 
+    width: 748px;
+    height: 3500px;
+    display: block;
+    padding: 10px;
+  }
+  #projects h2{
+    font-size: 65px;
+   margin: 20px;
+   text-decoration: 2px underline;
+   text-underline-offset: 6px;
+   color: rgb(12, 12, 42);
+   text-shadow: 2px 2px 4px rgb(12, 12, 42);
+  }
+  #procards{
+   
+    width: 730px;
+    height: 3300px;
+    display: block;
+    padding: 10px;
+  }
+  .card{
+    background-color: rgb(12, 12, 42);
+    width: 670px;
+    height: 500px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 15px -15px 10px rgb(101, 179, 208) ;
+    position: relative;
+    
+  }
+  .card #cardhead{
+    font-size: 55px;
+    margin-top: 40px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(176, 201, 157);
+    text-shadow: 3px 3px 4px rgb(101, 179, 208), 3px 3px 4px rgb(22, 146, 168);
+  }
+  .card p{
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .overlay2{
+    position: absolute;
+    bottom: 100%;
+     left: 0;
+    right: 0;
+   background-size: 670px 550px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 20px;
+  }
+.card:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+.overlay2 .link2 i{
+  font-size: 40px;
+  margin-top: 120px;
+  margin-left: 200px;
+ color: rgb(12, 12, 42);
+  text-shadow: 5px 5px 10px rgb(12, 12, 42), -5px -5px 10px rgb(12, 12, 42);
+}
+ 
+  #contact{
+  
+    width: 748px;
+    height: 1000px;
+    display: block;
+    padding: 10px;
+  }
+  #contact h2{
+    font-size: 65px;
+    color: rgb(12, 12, 42);
+    text-shadow: 2px 2px 4px rgb(12, 12, 42);
+  }
+  form{
+
+    height: 830px;
+    width: 550px;
+    margin-left: 100px;
+    margin-top: 20px;
+   
+  }
+  input{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 60px;
+  
+    border-radius: 10px;
+    width: 450px;
+    border: 4px solid rgb(12, 12, 42);
+  }
+  textarea{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 250px;
+    border-radius: 10px;
+    width: 450px;
+    border: 4px solid rgb(12, 12, 42);
+  }
+:placeholder-shown{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+  #sendbtn{
+    margin-left: 140px;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 40px;
+    border: 4px solid rgb(12, 12, 42);
+  }
+  footer{
+    background-color:rgb(12, 12, 42);
+    width: 748px;
+    height: 150px;
+    padding: 10px;
+  }
+  footer article{
+    background-color: rgba(89, 94, 105, 0.394);
+    width: 330px;
+    height: 70px;
+    margin-top: 38px;
+    margin-left: 200px;
+    border-radius: 10px;
+  }
+  article i{
+    font-size: 45px;
+    margin: 10px;
+    color: rgb(101, 179, 208);
+  }
+}
+@media(min-width: 1024px) and (max-width: 1920px) {
+
+ header{
+  width: 1520px;
+  height: 120px;
+ 
+}
+label{
+  top: 30px;
+  left: 20px;
+width: 180px;
+height: 50px;
+background-color: rgba(128, 128, 128, 0.031);
+border-radius: 40px;
+position: relative;
+display: block;
+
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4) inset, 0px -5px 15px rgba(255, 255, 255, 0.4) inset;
+cursor: pointer;
+transition: 0.3s;
+}
+label::after{
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 10px;
+ background: linear-gradient(180deg,#0A1D3D,#0C0C2A);
+ border-radius: 180px;
+ box-shadow: rgba(0, 0, 0, 0.2);
+ position: absolute;
+}
+ #dark-toggle{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#dark-toggle:checked +label{
+  background: #242424;
+  }
+#dark-toggle:checked +label::after{
+    left: 105px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+}
+label:active::after{
+  width: 60px;
+}
+.background{
+  width: 100vw;
+  height: 100vh;
+ z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+#dark-toggle:checked ~ body {
+  background: black;
+  color: white;
+}
+#dark-toggle:checked ~ .background{
+  background: black;
+ 
+  }
+
+   header h1{
+  margin-left: 450px;
+    padding: 0px;
+    width: 1519px;
+    font-size: 100px;
+    color: rgb(12, 12, 42);
+  }
+  nav{
+    width: 1520px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
+  #logo{
+    margin-top: 0px;
+    width: 150px;
+    height: 80px;
+   
+  }
+ .dropdown{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 780px;
+  word-spacing: 50px;
+ }
+ .dropdown :hover{
+  background:#0C0C2A ;
+  border-radius: 8px;
+ }
+ .dropdown li{
+  display: inline;
+  
+ }
+ .dropdown li a{
+  text-decoration: none;
+    font-weight: bold;
+  font-size: 20px;
+ }
+ .dropdown li a:hover{
+  color: whitesmoke;
+ }
+  #home{
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    padding: 10px;
+    margin-top: 30px;
+   background-size: 1520px 550px;
+   background-repeat: no-repeat;
+
+  
+  }
+  #head{
+    display: block;
+    width: 800px;
+    height: 500px;
+    margin-top: 40px;
+  }
+  h4{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 60px;
+  }
+  #heading{
+    font-size: 40px;
+  }
+  p{
+    font-size: 25px;
+  }
+  #profile{
+    margin-top: 95px;
+    box-shadow: 20px 20px 25px rgb(12, 12, 42), -20px -20px 25px rgb(12, 12, 42), -20px 20px 25px rgb(12, 12, 42), 20px -20px 25px rgb(12, 12, 42);
+    width: 350px;
+    height: 350px;
+    border-radius: 250px;
+  }
+  #bottom{
+  
+    display: block;
+  margin-top: 0px;
+     width: 1500px;
+     height: 200px;
+     padding: 10px;
+     
+   }
+   .homeicons{
+     width: 300px;
+     height: 20px;
+     background-color: rgb(12, 12, 42);
+     border-radius: 20px;
+     margin-left: 490px;
+     display: flex;
+     flex-wrap: nowrap;
+     box-shadow: -5px -5px 8px rgb(101, 179, 208);
+     
+   }
+   #icon1{
+   
+       color: rgb(12, 12, 42);
+      font-size: 5px;
+      margin-top: -30px;
+      padding: 0px;  
+   }
+   #homebtn{
+     width: 250px;
+     height: 60px;
+     margin-top: 30px;
+     margin-left: 530px;
+     border-radius: 20px;
+     background-color: rgb(12, 12, 42);
+     padding: 5px;
+     box-shadow: 5px 5px 10px rgb(101, 179, 208) , -5px -5px 20px rgb(101, 179, 208) ;
+     
+   }
+   #homebtn:hover{
+     background-color: rgb(12, 12, 42);
+   }
+   #homebtn a{
+     color: rgb(101, 179, 208);
+     font-size: 20px;
+     font-weight: 900;
+     text-decoration: none;
+     margin-left: 20px;
+   }
+   #homebtn a:hover{
+     color: whitesmoke;
+   }
+   #aboutme{
+    width: 1500px;
+    height: 700px;
+    padding: 10px;   
+  }
+  .aboutheader{
+  
+    width: 1500px;
+    height: 70px;
+   
+  }
+  #aboutheading{
+    text-align: left;
+    color: rgb(12, 12, 42);
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgb(12, 12, 42);
+  }
+  #container{
+    display: flex;
+  
+    height:600px ;
+  }
+  .aboutimg{
+  
+    height: 600px;
+  }
+  #photo{
+    width: 300px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 70px;
+    border-radius: 60px;
+    margin-right: 30px;
+   }
+   .aboutcontent{
+   width: 1500px;
+   height: 600px;
+  
+   }
+   .aboutcontent h3{
+   margin-top: 60px;
+   text-align: center;
+   font-size: 60px;
+   font-weight: bolder;
+   color: rgb(12, 12, 42);
+   font-style: italic;
+   
+   }
+   .aboutcontent p{
+    font-size: 20px;
+     margin-top: 50px;
+   }
+   #aboutbtn{
+     height: 50px;
+     width: 200px;
+     margin-left: 350px;
+     margin-top: 30px;
+     border-radius: 15px;
+     background-color: rgb(12, 12, 42);
+     box-shadow: 5px 5px 10px rgb(101, 179, 208) , -5px -5px 10px rgb(101, 179, 208) ;
+   }
+   #aboutbtn a{
+     font-size: 20px;
+     text-decoration: none;
+     color: rgb(101, 179, 208);
+     font-weight: bold;
+   }
+   #skills{
+    
+    height: 350px;
+    width: 1500px;
+    margin-top: 0px;  
+    padding: 10px;
+  
+  }
+   .skillsheader{
+    
+    width: 1520px;
+    height: 90px;
+    margin-top: 0;
+   }
+  .skillsheader h2{
+    text-align:left;
+    color: rgb(12, 12, 42);
+    font-size: 50px;
+  }
+  #skillbox{
+    background-color: rgb(12, 12, 42);
+    height: 250px;
+    width: 1200px;
+    margin-left: 150px;
+    border-radius: 10px;  
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   box-shadow: 5px 5px 5px rgb(101, 179, 208) inset;
+}
+  .skillsheader li{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 70px;
+    padding: 0px;
+  }
+  li h3{
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 0px;
+    
+  }
+  .bar{
+    background-color: aliceblue;
+    display: block;
+    width: 200px;
+    height: 6px;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(101, 179, 208), -5px -5px 10px rgb(101, 179, 208);
+  }
+  .bar span{
+    height: 40px;
+    float: left;
+    background-color: rgb(99, 179, 193);
+  }
+  
+  .certify{
+  
+    height: 500px;
+    width: 1500px;
+    
+    padding: 10px;
+  }
+  #certifyheading{
+    font-size: 50px;
+    color: rgb(12, 12, 42);
+    text-decoration:2px underline;
+    text-underline-offset: 10px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgb(12, 12, 42);
+   
+  }
+  .cbox{
+    display: flex;
+    justify-content: space-between;
+ 
+    height: 550px;
+  }
+  .certification{
+    background-color: rgb(12, 12, 42);
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 60px;
+   box-shadow: -2px -2px 2px rgb(101, 179, 208);
+    border-radius: 30px;
+  }
+  .certification h3{
+    font-size: 40px;
+  }
+  .certification p{
+    font-size: 20px;
+    margin-top: 90px;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+   background-size: 420px 400px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 20px;
+  }
+.certification:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+.overlay .text{
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(12, 12, 42);
+  margin-top: 130px;
+  margin-left: 170px;
+}
+
+ 
+  #services{
+  
+    width: 1500px;
+    height: 500px;
+    display: block;
+    padding: 10px;
+    
+  }
+  #services h2{
+     font-size: 50px;
+     margin: 20px;
+     text-decoration:2px underline;
+     text-underline-offset: 8px;
+     color: rgb(12, 12, 42);
+  }
+  .servicecard{
+    height: 300px;
+    width: 1200px;
+    background-color: rgb(12, 12, 42);
+    margin-left: 130px;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+  @keyframes serviceanimation{
+    from{ margin-left: 130px;}
+    to{margin-left: 1300px;}
+    }
+  .servicecard p{
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  #projects{
+    
+    width: 1500px;
+    height: 950px;
+    display: block;
+    padding: 10px;
+  }
+  #projects h2{
+    font-size: 50px;
+   margin: 20px;
+   text-decoration: underline;
+   text-underline-offset: 6px;
+  }
+  #procards{
+  
+    width: 1480px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .card{
+    background-color:rgb(12, 12, 42);
+    width: 400px;
+    height: 300px;
+    
+    border-radius: 20px;
+  }
+  .card #cardhead{
+    font-size: 35px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  .card p{
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .card i{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(12, 12, 42);
+  }
+  #contact{
+    
+    width: 1500px;
+    height: 650px;
+    display: block;
+    padding: 10px;
+  }
+  #contact h2{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(12, 12, 42);
+  }
+  form{
+  
+    height: 500px;
+    width: 900px;
+    margin-left: 320px;
+    margin-top: 20px;
+  }
+  input{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 10px;
+    width: 400px;
+  }
+  textarea{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 250px;
+    border-radius: 10px;
+    width: 850px;
+  }
+:placeholder-shown{
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+  #sendbtn{
+    margin-left: 320px;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(12, 12, 42);
+    box-shadow: 5px 5px 10px gray, -5px 5px 10px gray ;
+  }
+  #sendbtn :hover{
+    background-color: whitesmoke;
+  }
+  footer{
+    background-color: rgb(12, 12, 42);
+    width: 1500px;
+    height: 150px;
+    padding: 10px;
+  }
+  footer article{
+    background-color: rgba(89, 94, 105, 0.394);
+    width: 400px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 530px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 2px rgb(101, 179, 208);
+  }
+  article i{
+    font-size: 40px;
+    margin: 20px;
+    color: rgb(101, 179, 208);
+  }
+ 
+}
