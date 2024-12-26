@@ -164,7 +164,7 @@ p{
   box-shadow: 2px -4px 15px rgb(12, 12, 42) ,  2px 2px 15px rgb(12, 12, 42) ;
 }
 
-#icon1{
+.icon1{
 
     color: rgb(12, 12, 42);
     margin-left: 2px;
@@ -499,7 +499,7 @@ color: rgb(12, 12, 42);
 .card:hover{
   transform: translate3d(10px,10px,10px);
 }
-.card #cardhead{
+.card .cardhead{
   font-size: 35px;
   margin-top: 20px;
   margin-left: 2px;
@@ -772,7 +772,7 @@ label:active::after{
     border-radius: 20px;
     box-shadow: 9px 9px 10px rgb(101, 179, 208);
   }
-  #icon1{
+  .icon1{
   
       color: whitesmoke;
      font-size: 40px;
@@ -1053,7 +1053,7 @@ label:active::after{
     position: relative;
     
   }
-  .card #cardhead{
+  .card .cardhead{
     font-size: 55px;
     margin-top: 40px;
     font-style: italic;
@@ -1326,7 +1326,7 @@ label:active::after{
      box-shadow: -5px -5px 8px rgb(101, 179, 208);
      
    }
-   #icon1{
+   .icon1{
    
        color: rgb(12, 12, 42);
       font-size: 5px;
@@ -1607,7 +1607,7 @@ label:active::after{
     
     border-radius: 20px;
   }
-  .card #cardhead{
+  .card .cardhead{
     font-size: 35px;
     margin-top: 20px;
     text-decoration: none;
